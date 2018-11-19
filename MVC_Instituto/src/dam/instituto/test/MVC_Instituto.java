@@ -17,13 +17,10 @@ public class MVC_Instituto {
         window.addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
-                if (JOptionPane.showConfirmDialog(window,
-                        "¿Estas seguro que desea salir?", "Confirmacion Salida",
-                        JOptionPane.YES_NO_OPTION,
-                        JOptionPane.QUESTION_MESSAGE) == JOptionPane.YES_OPTION) {
-                    Conexion.cerrarSesion();
-                    System.exit(0);
-                }
+
+                Conexion.cerrarSesion();
+                System.exit(0);
+
             }
         });
     }

@@ -15,6 +15,4 @@ public interface IDAOAlumno {
     public List<Alumno> getDatosAlumno();
     public List<Intermediario> getCalificacion(String dni);
 
-    
-    
 }
