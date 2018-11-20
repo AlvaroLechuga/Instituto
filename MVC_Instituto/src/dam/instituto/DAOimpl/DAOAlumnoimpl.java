@@ -39,11 +39,11 @@ public class DAOAlumnoimpl implements IDAOAlumno {
 
             String consulta = "INSERT INTO `alumno` (`DNI`, `Nombre`, `Direccion`) VALUES ('" + dni + "', '" + nombre + "', '" + direccion + "')";
 
-            conn.setAutoCommit(false);
+            //conn.setAutoCommit(false);
             st = conn.createStatement();
             st.executeUpdate(consulta);
 
-            conn.rollback();
+            conn.commit();
 
             st.close();
 

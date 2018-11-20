@@ -38,7 +38,7 @@ public class DAOAsignaturaimpl implements IDAOAsignatura {
             st = conn.createStatement();
             st.executeUpdate(consulta);
 
-            conn.rollback();
+            conn.commit();
 
             st.close();
 

@@ -39,7 +39,7 @@ public class DAOMatriculaimpl implements IDAOMatricula {
             st = conn.createStatement();
             st.executeUpdate(consulta);
 
-            conn.rollback();
+            conn.commit();
 
             st.close();
 
